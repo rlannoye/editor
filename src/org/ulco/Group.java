@@ -2,7 +2,7 @@ package org.ulco;
 
 import java.util.Vector;
 
-public class Group {
+public class Group{
 
     public Group() {
         m_groupList = new  Vector<Group>();
@@ -57,6 +57,14 @@ public class Group {
     public int getID() {
         return m_ID;
     }
+
+    /*@Override
+    boolean isClosed(Point pt, double distance) {
+        for (){
+
+        }
+    }
+    */
 
     public void move(Point delta) {
         Group g = new Group();
