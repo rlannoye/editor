@@ -9,6 +9,12 @@ public class Group extends GraphicsObject{
         m_ID = ++ID.ID;
     }
 
+    /*
+    public boolean isSimple(){
+        return false;
+    }
+    */
+
     public Group(String json) {
         m_objectList = new Vector<GraphicsObject>();
         String str = json.replaceAll("\\s+","");
@@ -23,6 +29,7 @@ public class Group extends GraphicsObject{
         Vector<GraphicsObject> objects = new Vector<GraphicsObject>();
         for(Object obj : m_objectList){
             if(!(obj instanceof Group)){
+                //if(obj.isGraphicsObject())
                 objects.add((GraphicsObject)obj);
             }
         }
@@ -142,6 +149,7 @@ public class Group extends GraphicsObject{
         int size=0;
         for(Object obj: m_objectList){
             if(!(obj instanceof Group)){
+                //if(obj.isGraphicsObject())
                 size++;
             }
         }

@@ -7,6 +7,11 @@ abstract public class GraphicsObject {
 
     abstract public GraphicsObject copy();
 
+    /*public boolean isSimple(){
+        return true;
+    }
+    */
+
     public int getID() {
         return m_ID;
     }
