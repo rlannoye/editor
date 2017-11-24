@@ -7,14 +7,7 @@ public class Group extends GraphicsObject{
     public Group(){
         super();
         m_objectList = new Vector<GraphicsObject>();
-        //m_ID = ++ID.ID;
     }
-
-    /*
-    public boolean isSimple(){
-        return false;
-    }
-    */
 
     public Group(String json) {
         m_objectList = new Vector<GraphicsObject>();
@@ -50,7 +43,7 @@ public class Group extends GraphicsObject{
     }
 
     @Override
-    boolean isClosed(Point pt, double distance) {
+     public boolean isClosed(Point pt, double distance) {
         return false;
     }
 

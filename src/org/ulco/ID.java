@@ -4,6 +4,7 @@ public class ID {
     private int id;
     private static ID generator;
 
+
     private ID(){
         id=0;
     }
@@ -18,5 +19,4 @@ public class ID {
     public int getID(){
         return id++;
     }
-    //static public int ID = 0;
 }

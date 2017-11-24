@@ -2,16 +2,10 @@ package org.ulco;
 
 abstract public class GraphicsObject {
     public GraphicsObject() {
-        //m_ID = ++ID.ID;
         m_ID=ID.getGenerator().getID();
     }
 
     abstract public GraphicsObject copy();
-
-    /*public boolean isSimple(){
-        return true;
-    }
-    */
 
     public int getID() {
         return m_ID;
@@ -27,3 +21,5 @@ abstract public class GraphicsObject {
 
     private int m_ID;
 }
+
+
