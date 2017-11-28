@@ -1,11 +1,7 @@
 package org.ulco;
 
-import java.util.Iterator;
-import java.util.Vector;
-
 public class DocumentBuilders extends Document{
-    public Document DocumentBuilders(Point origin, int line, int column, double length) {
-        //m_layers = new Vector<Layer>();
+    public static Document DocumentBuild(Point origin, int line, int column, double length) {
         Document document = new Document();
         Layer layer = document.createLayer();
 
@@ -18,8 +14,7 @@ public class DocumentBuilders extends Document{
         return document;
     }
 
-    public Document DocumentBuilders(Point center, int number, double radius, double delta) {
-        //m_layers = new Vector<Layer>();
+    public static Document DocumentBuild(Point center, int number, double radius, double delta) {
         Document document= new Document();
         Layer layer = document.createLayer();
 
